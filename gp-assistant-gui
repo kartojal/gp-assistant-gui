@@ -28,6 +28,24 @@ EOF
     zenity --question  --title="gp-assistant" --text="Now will start a few questions, needed for plotting."
     zenity_yes_case 
 }
+check_devices(){
+if [ -f "./devices.txt" ];
+then
+    return
+else
+    zenity --question --title="gp-assistant"  --text="You need to configure your devices for using GpuPlotGenerator, ¿do you want to do it now?"
+    case $? in
+        0)
+            xterm -hold -e "./gpuPlotGenerator setup"
+            exit 0
+            ;;
+        *)
+            exit 0
+            ;;
+    esac
+fi
+
+}
 questions(){
     # Number of plots
     while [[ -z ${N_PLOTS} && ! ${N_PLOTS} =~ ^-?[0-9]+$ ]];
@@ -126,6 +144,7 @@ unknown_error(){
 }
 
 hello
+check_devices
 questions
 diskspace
 plot_previous
