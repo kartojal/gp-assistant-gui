@@ -21,7 +21,7 @@ If you already have gpuPlotGenerator:
 * Clone this repository, extract it.
 * Copy gp-assistant-gui and gpuminer_loop to your gpuPlotGenerator directory.
 * Add execution permissions: 
-  >> chmod +x gp-assistant-gui gpuminer_loop
+  code(chmod +x gp-assistant-gui gpuminer_loop)
 * Execute it via terminal:
   >> ./gp-assistant-gui
 
