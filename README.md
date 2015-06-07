@@ -17,13 +17,13 @@ Easy way:
 * Double-click on gp-assistant-gui executable, reply the questions, select the directory where the plots will be written, and let the gp-assistant launch gpuPlotGenerator with the correct parameters.
 * ¡Mine!
 
-If you already have gpuPlotGenerator:
+***If you already have gpuPlotGenerator:***
 * Clone this repository, extract it.
 * Copy gp-assistant-gui and gpuminer_loop to your gpuPlotGenerator directory.
 * Add execution permissions: 
-  code(chmod +x gp-assistant-gui gpuminer_loop)
+  ``` chmod +x gp-assistant-gui gpuminer_loop ```
 * Execute it via terminal:
-  >> ./gp-assistant-gui
+  ``` ./gp-assistant-gui ```
 
 ## How-to compile this Bash Script to binary
 You can compile a bash script to binary, with shc by " Francisco Javier Rosales García "
